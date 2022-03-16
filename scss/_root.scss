@@ -1,0 +1,52 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: $font;
+}
+body {
+	background-color: $black;
+	position: relative;
+	margin: 0;
+	min-height: 100vh;
+}
+$main-data: (
+	fondo: $black,
+	pad-botton: 100px,
+	pad-top: 50px,
+);
+main {
+	background-color: map-get($main-data, fondo);
+	padding-bottom: map-get($main-data, pad-botton);
+	padding-top: map-get($main-data, pad-top);
+}
+
+.body_index {
+	position: relative;
+	background-image: url("../assets/img/index_beba2.jpg");
+	height: calc(100vh - 62px);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0px;
+}
+a {
+	color: $red;
+	font-size: 30px;
+	text-decoration: none;
+	display: inline-block;
+	transition: transform 0.2s ease-out;
+	&:hover {
+		color: $purple;
+	}
+}
+
+h1 {
+	color: $purple;
+	margin: none;
+	background-color: $black3;
+}
+
+h2 {
+	color: $yellow;
+}
